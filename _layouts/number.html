@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<section class="page-head"><div class="wrap"><p class="crumbs"><a href="/">Home</a> / <a href="/numbers/">Number meanings</a> / {{ page.s }}</p><h1>{{ page.s }}: meaning, maths and lucky-number lore</h1><p>The number {{ page.s }} decoded — its mathematics first, then what cultures and belief traditions say about it, and how businesses use it.</p></div></section>
+<section class="block"><div class="wrap layout-side"><article class="prose">
+<p class="muted" style="font-size:.92rem">By the 017777 editorial team · Last reviewed 2026-10-22 · <a href="/editorial-policy.html">How we research</a></p>
+<h2>The maths of {{ page.s }}</h2>
+<p>{{ page.special }}</p>
+<table><tr><th>Property</th><th>Value</th></tr>{% for r in page.rows %}<tr><td>{{ r[0] }}</td><td>{{ r[1] }}</td></tr>{% endfor %}</table>
+
+<h2>{{ page.s }} across cultures</h2>
+<ul>{% for d in page.digits %}{% assign g = site.data.digits[d] %}<li><strong>{{ d }} ({{ g.name }}):</strong> {{ g.culture }}</li>{% endfor %}</ul>
+
+<h2>{{ page.s }} in business and commerce</h2>
+<ul>{% for d in page.digits %}{% assign g = site.data.digits[d] %}<li>{{ g.commerce }}</li>{% endfor %}</ul>
+
+<h2>{{ page.s }} as an “angel number” <span class="tag">Belief tradition</span></h2>
+<p>Angel-number writers read {{ page.s }} as a message about {{ page.themes }}. Repeated digits are said to amplify the meaning of the base digit. Common moments people report seeing it: {{ page.clock }}.</p>
+<div class="callout"><strong>What the evidence says:</strong> there is no scientific evidence that numbers carry messages. The experience is real, though: the frequency illusion makes recently noticed patterns seem to appear everywhere. Use these readings as prompts for reflection, not as guidance for money, health or safety decisions.</div>
+
+{% capture q1 %}What does {{ page.s }} mean?{% endcapture %}{% capture a1 %}Mathematically, {{ page.value }} = {{ page.fx }}. In angel-number and numerology traditions, {{ page.s }} is read around {{ page.themes }}. Those readings are cultural beliefs, not predictions.{% endcapture %}{% capture q2 %}Is {{ page.s }} a lucky number?{% endcapture %}{% capture a2 %}It depends on culture. {{ site.data.digits[page.main].culture }}{% endcapture %}{% capture q3 %}Why do I keep seeing {{ page.s }}?{% endcapture %}{% capture a3 %}Psychologists point to the frequency illusion (Baader–Meinhof phenomenon): once a pattern is on your mind, you notice it more, and each match feels significant. Clocks, receipts and plates show repeating digits more often than people expect.{% endcapture %}
+<h2>Questions</h2>
+<details><summary>{{ q1 }}</summary><p>{{ a1 }}</p></details><details><summary>{{ q2 }}</summary><p>{{ a2 }}</p></details><details><summary>{{ q3 }}</summary><p>{{ a3 }}</p></details>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":{{ q1 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a1 | jsonify }}}},{"@type":"Question","name":{{ q2 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a2 | jsonify }}}},{"@type":"Question","name":{{ q3 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a3 | jsonify }}}}]}</script>
+</article>
+<aside><div class="panel">
+<h3>Decode any number</h3>
+<form id="decoder-form" data-start="{{ page.s }}"><input style="width:100%;padding:10px;border-radius:6px;border:1px solid var(--line)" name="n" inputmode="numeric" aria-label="Number"><button class="btn" style="margin-top:8px;width:100%">Decode</button></form>
+<div class="tool-out" id="decoder-out"></div>
+<h3 style="margin-top:18px">Related numbers</h3><div class="kv">{% for x in page.rel %}<a href="/numbers/{{ x }}.html"><span>{{ x }}</span></a>{% endfor %}</div>
+<p style="margin-top:14px"><a class="btn gold" href="/number-strategy.html">Own a {{ page.s }} domain or phone number?</a></p>
+</div></aside>
+</div></section>

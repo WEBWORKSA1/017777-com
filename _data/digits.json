@@ -1,0 +1,52 @@
+{
+ "0": {
+  "name": "zero",
+  "culture": "Zero as a written number with its own value is credited to Indian mathematicians; in binary it is the 'off' state that half of all computing rests on.",
+  "commerce": "Zeros make prices look round and premium (100, 1,000). Strings of zeros in phone numbers are easy to say but easy to mis-dial."
+ },
+ "1": {
+  "name": "one",
+  "culture": "One means first and unique in most cultures; in Indian gift-giving an extra 1 (101, 501, 1001) turns a round sum into a fresh start.",
+  "commerce": "Ones read as 'first' and 'number one' — common in rankings, hotlines and brand names."
+ },
+ "2": {
+  "name": "two",
+  "culture": "In Chinese tradition good things come in pairs, so doubled digits (22, 88) are favoured for weddings and openings.",
+  "commerce": "Pairs suggest bundles and two-for-one offers."
+ },
+ "3": {
+  "name": "three",
+  "culture": "Three signals completeness in Western storytelling and is considered lucky in Korean tradition; in Hinduism it echoes the trimurti.",
+  "commerce": "The 'rule of three' drives good-better-best pricing tiers."
+ },
+ "4": {
+  "name": "four",
+  "culture": "In Chinese, Japanese and Korean, four sounds like the word for death, so many buildings skip fourth floors and buyers avoid 4s in phone numbers and plates.",
+  "commerce": "Remove 4s from prices, plates, room numbers and phone numbers aimed at East Asian buyers — it is one of the strongest number effects in commerce."
+ },
+ "5": {
+  "name": "five",
+  "culture": "Five links to the five elements in Chinese philosophy and the five senses in the West.",
+  "commerce": "Five-star ratings made 5 the universal symbol of quality."
+ },
+ "6": {
+  "name": "six",
+  "culture": "In Chinese, six sounds like 'smooth, flowing', and '666' is online slang for 'awesome'; in parts of the West, 666 carries negative religious associations.",
+  "commerce": "Six-heavy numbers sell well to Chinese-speaking buyers; test before using 666 with Western audiences."
+ },
+ "7": {
+  "name": "seven",
+  "culture": "Seven is the West's classic lucky number — seven days, seven wonders, the 777 jackpot — and Japan has its Seven Lucky Gods. In Chinese it is mixed: the romantic Qixi festival, but also the seventh-month Ghost Month.",
+  "commerce": "Seven-endings (27, 47, 97) are an internet-marketing habit; research favours 9-endings in general retail. Repeating sevens make memorable phone numbers and domains in Western markets."
+ },
+ "8": {
+  "name": "eight",
+  "culture": "In Chinese, eight (bā) sounds like 'prosper' (fā). The Beijing Olympics opened at 8 pm on 8/8/2008, and phone numbers and plates full of 8s sell at large premiums.",
+  "commerce": "The single most valuable digit for Chinese-speaking buyers of prices, plates, phone numbers and numeric domains."
+ },
+ "9": {
+  "name": "nine",
+  "culture": "In Chinese, nine sounds like 'long-lasting', which makes it popular for weddings; in Japanese, ku can sound like 'suffering'.",
+  "commerce": "Nine is the default retail price ending because of the left-digit effect (19.99 reads as 19)."
+ }
+}
