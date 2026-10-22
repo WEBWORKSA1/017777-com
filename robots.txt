@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /src/
+
+Sitemap: https://017777.com/sitemap.xml
