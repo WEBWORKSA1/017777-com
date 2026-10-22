@@ -1,0 +1,44 @@
+---
+layout: "default"
+title: "Free Number Decoder, Charm Price, Rule of 72 & Numerology Tools | 017777"
+description: "Decode any number (primes, factors, binary, hex, patterns, cultural meaning), compare price endings, find doubling time, score number memorability and more. Free, private, instant."
+ld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"017777 Number Decoder\", \"applicationCategory\": \"UtilitiesApplication\", \"operatingSystem\": \"Any\", \"offers\": {\"@type\": \"Offer\", \"price\": \"0\", \"priceCurrency\": \"USD\"}, \"url\": \"https://017777.com/tools.html\"}</script>"
+---
+<section class="page-head"><div class="wrap"><p class="crumbs"><a href="/">Home</a> / <a href="/tools.html">Tools</a></p><h1>Number decoder and free number tools</h1><p>Eight tools that run entirely in your browser. Nothing you type is stored or sent anywhere.</p></div></section>
+<section class="block"><div class="wrap">
+<div class="panel big" id="decoder">
+  <h2>Number decoder</h2>
+  <p class="muted">Leading zeros are kept, so you can decode phone prefixes and codes like 017777.</p>
+  <form id="decoder-form" class="lead" data-start="017777"><div class="row"><input name="n" inputmode="numeric" maxlength="30" aria-label="Number to decode" placeholder="Any number up to 30 digits"><button class="btn gold" type="submit">Decode</button></div></form>
+  <div class="tool-out" id="decoder-out" aria-live="polite"></div>
+</div>
+<div class="grid g2" style="margin-top:20px">
+  <div class="panel" id="charm"><h3>Charm-price calculator</h3>
+    <form id="charm-form" class="lead"><div class="row"><div><label for="price">Your price</label><input id="price" name="price" type="number" step="0.01" min="0.01" value="20" required></div><div><label for="cost">Unit cost (optional)</label><input id="cost" name="cost" type="number" step="0.01" min="0" value="12"></div></div><button class="btn" style="margin-top:12px" type="submit">Compare endings</button></form>
+    <div class="tool-out" id="charm-out" aria-live="polite"></div></div>
+  <div class="panel" id="rule72"><h3>Rule of 72 doubling time</h3>
+    <form id="rule72-form" class="lead"><label for="rate">Annual growth or inflation rate (%)</label><input id="rate" name="rate" type="number" step="0.1" min="0.1" value="7" required><button class="btn" style="margin-top:12px" type="submit">Calculate</button></form>
+    <div class="tool-out" id="rule72-out" aria-live="polite"></div></div>
+  <div class="panel" id="memo"><h3>Number memorability score</h3>
+    <form id="memo-form" class="lead"><label for="num">Domain, phone number or code (digits only)</label><input id="num" name="num" inputmode="numeric" value="7777" required><button class="btn" style="margin-top:12px" type="submit">Score it</button></form>
+    <div class="tool-out" id="memo-out" aria-live="polite"></div></div>
+  <div class="panel" id="name"><h3>Name numerology</h3>
+    <form id="name-form" class="lead"><label for="name_input">Full name</label><input id="name_input" name="name_input" required autocomplete="off"><label for="dob">Date of birth (optional)</label><input id="dob" name="dob" type="date"><button class="btn" style="margin-top:12px" type="submit">Calculate</button></form>
+    <div class="tool-out" id="name-out" aria-live="polite"></div></div>
+  <div class="panel" id="lucky"><h3>Lucky number picker</h3>
+    <form id="lucky-form" class="lead"><label for="seed">Name or word</label><input id="seed" name="seed" value="017777"><div class="row"><div><label for="ldate">Date</label><input id="ldate" name="date" type="date"></div><div><label for="count">How many</label><input id="count" name="count" type="number" min="1" max="10" value="6"></div></div><label for="max">Highest number</label><input id="max" name="max" type="number" min="5" max="100" value="49"><button class="btn" style="margin-top:12px" type="submit">Pick numbers</button></form>
+    <div class="tool-out" id="lucky-out" aria-live="polite"></div></div>
+  <div class="panel" id="base"><h3>Base converter</h3>
+    <form id="base-form" class="lead"><div class="row"><div><label for="val">Value</label><input id="val" name="val" value="17777" required></div><div><label for="from">From base</label><select id="from" name="from"><option value="10">Decimal</option><option value="2">Binary</option><option value="8">Octal</option><option value="16">Hex</option></select></div></div><button class="btn" style="margin-top:12px" type="submit">Convert</button></form>
+    <div class="tool-out" id="base-out" aria-live="polite"></div></div>
+  <div class="panel" id="word"><h3>Phone-word dialler</h3>
+    <form id="word-form" class="lead"><label for="w">Vanity word or phrase</label><input id="w" name="word" value="LUCKY7" required><button class="btn" style="margin-top:12px" type="submit">Get digits</button></form>
+    <div class="tool-out" id="word-out" aria-live="polite"></div></div>
+  <div class="panel"><h3>Need a human answer?</h3><p>The tools give you the arithmetic. For a decision — buying a numeric domain, choosing a business phone number, setting a launch price — book a strategy call.</p><a class="btn gold" href="/number-strategy.html">Request a strategy call</a></div>
+</div>
+<div class="prose" style="margin-top:40px">
+<h2>How the tools work</h2>
+<p>Every calculation runs in JavaScript on your device. The decoder uses exact big-integer arithmetic, tests primality by trial division up to one trillion, and factors numbers in the same range. Numerology tools use the Pythagorean letter table (A=1 … I=9, J=1 …) and keep master numbers 11, 22 and 33. The memorability score is a transparent heuristic: shorter strings, fewer distinct digits, repeated runs and culturally favoured digits score higher; the digit 4 scores lower because many East Asian buyers avoid it. It is not a valuation.</p>
+<p>Spotted an error or want a new tool? <a href="/contact.html">Tell us</a> — reader suggestions decide what we build next.</p>
+</div>
+</div></section>
