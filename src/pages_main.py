@@ -6,7 +6,7 @@ VIDEOS = [
     ("EI707AkhvaI", "What is the Rule of 72?", "The shortcut for how fast money, prices or users double."),
     ("DlLtaNxCYNE", "Where the 72 in the Rule of 72 comes from", "The logarithm behind the shortcut."),
     ("QhY5IV7CRhw", "Double your money: the maths of the Rule of 72", "Worked examples at different growth rates."),
-    ("USCBCmwMCDA", "Why computers use 1s and 0s", "Binary and transistors, the base layer of every AI model."),
+    ("USCBCmwMCDA", "How computers work: binary and data", "How zeros and ones store numbers, text and images — the base layer of every AI model."),
 ]
 
 
