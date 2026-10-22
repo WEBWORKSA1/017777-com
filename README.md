@@ -3,18 +3,21 @@
 Free number decoder, number-meanings library and research on numbers in commerce, AI, the economy and culture. Static site for GitHub Pages (free plan).
 
 ## Structure
-- `index.html`, pillar pages, tools, lead-gen (`number-strategy.html`), support, contests, careers, advertise, legal pages
+- `index.html`, pillar pages, tools, lead-gen (`number-strategy.html`), support, contests, careers, advertise, legal pages — Jekyll sources (front matter + page body)
+- `_layouts/default.html` — shared head (AdSense, SEO, schema), owner bar, header and footer for every page
+- `_layouts/number.html` + `_data/digits.json` — renders the `numbers/` library from front matter
 - `numbers/` — number-meanings library (30 pages)
 - `assets/css/site.css` — design system (light/dark)
 - `assets/js/config.js` — site settings: payment links, AdSense client, encoded form key
 - `assets/js/numbers.js` — number engine and tools
 - `assets/js/main.js` — nav, theme, forms, video facades, hero board
-- `src/` — Python build script that generates every HTML page from shared templates
+- `src/` — Python sources that generate all pages (`build.py` renders a plain-HTML preview, `jekyll.py` writes the Jekyll sources)
 
 ## Edit and rebuild
-Edit files in `src/` and push. The **Build site** GitHub Action runs `python3 src/build.py` and commits the generated HTML automatically. To build locally:
+GitHub Pages builds the site with its built-in Jekyll on every push — no Actions needed. To change content, edit `src/` and regenerate:
 ```
-python3 src/build.py
+python3 src/build.py      # plain-HTML preview in _preview/ + sitemap.xml
+python3 src/jekyll.py     # rewrites the Jekyll page sources in the repo root
 ```
 Add number pages by extending `NUMBERS` and `SPECIAL` in `src/numbers_pages.py`.
 

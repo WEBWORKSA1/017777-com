@@ -1,5 +1,5 @@
 title: 017777 Number Intelligence
 url: https://017777.com
 markdown: kramdown
-exclude: [src, README.md, PROMPTS.md, "*.py"]
+exclude: [src, _preview, README.md, PROMPTS.md, "*.py"]
 include: [ads.txt]

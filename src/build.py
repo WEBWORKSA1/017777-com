@@ -1,10 +1,14 @@
-"""Build 017777.com: python3 src/build.py  (writes static HTML into the repo root)."""
+"""Render every page as plain HTML into _preview/ (for local review) and write sitemap.xml at the repo root.
+
+python3 src/build.py && python3 src/jekyll.py   # then commit the regenerated Jekyll sources
+"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from layout import page, page_head, SITE, UPDATED
 import pages_main, pages_biz, numbers_pages
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ROOT = os.path.join(REPO, "_preview")
 
 
 def write(rel, html):
@@ -46,7 +50,8 @@ def main():
         loc = "/" if rel == "index.html" else "/" + rel.replace("index.html", "")
         pr = "1.0" if loc == "/" else "0.8" if rel in ("tools.html", "meaning-of-017777.html", "numbers/index.html", "number-strategy.html") else "0.6"
         urls.append(f"  <url><loc>{SITE}{loc}</loc><lastmod>{UPDATED}</lastmod><priority>{pr}</priority></url>")
-    write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n")
+    with open(os.path.join(REPO, "sitemap.xml"), "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n")
     print(f"Built {len(out)} pages, {len(urls)} URLs in sitemap.xml")
 
 
